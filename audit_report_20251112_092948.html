@@ -1,0 +1,59 @@
+
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <title>Relatório de Auditoria de Dados</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                .header { background-color: #f8f9fa; padding: 20px; border-radius: 10px; }
+                .section { margin: 20px 0; padding: 15px; border-left: 4px solid #007bff; }
+                .good { color: green; }
+                .warning { color: orange; }
+                .critical { color: red; }
+                table { border-collapse: collapse; width: 100%; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>📊 Relatório de Auditoria de Dados</h1>
+                <p><strong>Data:</strong> 12/11/2025 09:30:07</p>
+                <p><strong>Dataset:</strong> (541909, 8)</p>
+                <h2>Score de Qualidade: <span class="good">90.8/100</span></h2>
+            </div>
+
+            <div class="section">
+                <h2>📋 Informações Básicas</h2>
+                <p><strong>Dimensões:</strong> (541909, 8)</p>
+                <p><strong>Uso de memória:</strong> 126.18 MB</p>
+            </div>
+
+            <div class="section">
+                <h2>✅ Completude</h2>
+                <table>
+                    <tr><th>Coluna</th><th>Valores Nulos</th><th>Percentual</th></tr>
+        
+                    <tr>
+                        <td>Description</td>
+                        <td>1454</td>
+                        <td>0.3%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>CustomerID</td>
+                        <td>135080</td>
+                        <td>24.9%</td>
+                    </tr>
+                
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>🔍 Unicidade</h2>
+                <p><strong>Registros duplicados:</strong> 5268 (1.0%)</p>
+            </div>
+        </body>
+        </html>
+        

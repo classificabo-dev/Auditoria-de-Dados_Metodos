@@ -1,0 +1,251 @@
+{
+  "basic_info": {
+    "shape": [
+      541909,
+      8
+    ],
+    "memory_usage": "132310571",
+    "columns": [
+      "InvoiceNo",
+      "StockCode",
+      "Description",
+      "Quantity",
+      "InvoiceDate",
+      "UnitPrice",
+      "CustomerID",
+      "Country"
+    ],
+    "data_types": {
+      "InvoiceNo": "object",
+      "StockCode": "object",
+      "Description": "object",
+      "Quantity": "int64",
+      "InvoiceDate": "datetime64[ns]",
+      "UnitPrice": "float64",
+      "CustomerID": "float64",
+      "Country": "object"
+    }
+  },
+  "completeness": {
+    "total_rows": 541909,
+    "null_count": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 1454,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 135080,
+      "Country": 0
+    },
+    "null_percentage": {
+      "InvoiceNo": 0.0,
+      "StockCode": 0.0,
+      "Description": 0.2683107311375157,
+      "Quantity": 0.0,
+      "InvoiceDate": 0.0,
+      "UnitPrice": 0.0,
+      "CustomerID": 24.926694334288598,
+      "Country": 0.0
+    },
+    "empty_strings": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 0,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 0,
+      "Country": 0
+    },
+    "whitespace_only": {
+      "InvoiceNo": 0,
+      "StockCode": 0,
+      "Description": 0,
+      "Quantity": 0,
+      "InvoiceDate": 0,
+      "UnitPrice": 0,
+      "CustomerID": 0,
+      "Country": 0
+    }
+  },
+  "data_types": {
+    "InvoiceNo": {
+      "dtype": "object",
+      "unique_count": 25900,
+      "sample_values": [
+        536365,
+        536365,
+        536365
+      ],
+      "mixed_types": true
+    },
+    "StockCode": {
+      "dtype": "object",
+      "unique_count": 4070,
+      "sample_values": [
+        "85123A",
+        71053,
+        "84406B"
+      ],
+      "mixed_types": true
+    },
+    "Description": {
+      "dtype": "object",
+      "unique_count": 4223,
+      "sample_values": [
+        "WHITE HANGING HEART T-LIGHT HOLDER",
+        "WHITE METAL LANTERN",
+        "CREAM CUPID HEARTS COAT HANGER"
+      ],
+      "mixed_types": true
+    },
+    "Quantity": {
+      "dtype": "int64",
+      "unique_count": 722,
+      "sample_values": [
+        6,
+        6,
+        8
+      ],
+      "mixed_types": false
+    },
+    "InvoiceDate": {
+      "dtype": "datetime64[ns]",
+      "unique_count": 23260,
+      "sample_values": [
+        "2010-12-01 08:26:00",
+        "2010-12-01 08:26:00",
+        "2010-12-01 08:26:00"
+      ],
+      "mixed_types": false
+    },
+    "UnitPrice": {
+      "dtype": "float64",
+      "unique_count": 1630,
+      "sample_values": [
+        2.55,
+        3.39,
+        2.75
+      ],
+      "mixed_types": false
+    },
+    "CustomerID": {
+      "dtype": "float64",
+      "unique_count": 4372,
+      "sample_values": [
+        17850.0,
+        17850.0,
+        17850.0
+      ],
+      "mixed_types": false
+    },
+    "Country": {
+      "dtype": "object",
+      "unique_count": 38,
+      "sample_values": [
+        "United Kingdom",
+        "United Kingdom",
+        "United Kingdom"
+      ],
+      "mixed_types": false
+    }
+  },
+  "uniqueness": {
+    "total_duplicates": "5268",
+    "percentage_duplicates": 0.9721189350979592,
+    "key_candidates": [],
+    "column_uniqueness": {
+      "InvoiceNo": {
+        "unique_count": 25900,
+        "unique_percentage": 4.779400231404166
+      },
+      "StockCode": {
+        "unique_count": 4070,
+        "unique_percentage": 0.7510486077920832
+      },
+      "Description": {
+        "unique_count": 4223,
+        "unique_percentage": 0.7792821303945865
+      },
+      "Quantity": {
+        "unique_count": 722,
+        "unique_percentage": 0.13323270143142113
+      },
+      "InvoiceDate": {
+        "unique_count": 23260,
+        "unique_percentage": 4.292233566890382
+      },
+      "UnitPrice": {
+        "unique_count": 1630,
+        "unique_percentage": 0.30078850877176794
+      },
+      "CustomerID": {
+        "unique_count": 4372,
+        "unique_percentage": 0.8067775216872205
+      },
+      "Country": {
+        "unique_count": 38,
+        "unique_percentage": 0.007012247443759008
+      }
+    }
+  },
+  "outliers": {
+    "Quantity": {
+      "outlier_count": "58619",
+      "outlier_percentage": 10.817129813308139,
+      "min": "-80995",
+      "max": "80995",
+      "lower_bound": -12.5,
+      "upper_bound": 23.5
+    },
+    "UnitPrice": {
+      "outlier_count": "39627",
+      "outlier_percentage": 7.312482354048373,
+      "min": -11062.06,
+      "max": 38970.0,
+      "lower_bound": -3.0700000000000003,
+      "upper_bound": 8.45
+    },
+    "CustomerID": {
+      "outlier_count": "0",
+      "outlier_percentage": 0.0,
+      "min": 12346.0,
+      "max": 18287.0,
+      "lower_bound": 9696.0,
+      "upper_bound": 21048.0
+    }
+  },
+  "business_rules": {
+    "negative_quantity": {
+      "count": "10624",
+      "percentage": 1.9604767590130447
+    },
+    "pricing_issues": {
+      "zero_prices": "2515",
+      "negative_prices": "2"
+    },
+    "future_dates": "0"
+  },
+  "timeline": {
+    "date_range": {
+      "min": "2010-12-01 08:26:00",
+      "max": "2011-12-09 12:50:00",
+      "span_days": 373
+    },
+    "missing_dates": 358,
+    "duplicate_timestamps": "518649"
+  },
+  "consistency": {
+    "free_items": {
+      "count": "1179",
+      "description": "Itens com quantidade positiva mas preço zero"
+    }
+  },
+  "quality_score": 90.77262049532303,
+  "audit_timestamp": "20251112_092948",
+  "dataset_shape": [
+    541909,
+    8
+  ]
+}

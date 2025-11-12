@@ -1,0 +1,25 @@
+## 🛠️ Tecnologias utilizadas
+- Python 3.10+
+- Pandas, NumPy
+- Pytest (para testes automatizados)
+- Jupyter Notebook (para demonstrações)
+- Matplotlib / Seaborn (para visualizações)
+
+
+
+## ⚙️ Instalação
+```bash
+# Clone o repositório
+git clone https://github.com/classificabo-dev/AuditoriaDadosMetodo.git
+
+# Entre na pasta
+cd AuditoriaDadosMetodo
+
+# Crie um ambiente virtual
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+

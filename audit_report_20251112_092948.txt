@@ -1,0 +1,19 @@
+============================================================
+           RELATÓRIO DE AUDITORIA DE DADOS
+============================================================
+Data da auditoria: 12/11/2025 09:30:06
+Dataset: (541909, 8)
+
+📋 INFORMAÇÕES BÁSICAS:
+   • Dimensões: (541909, 8)
+   • Uso de memória: 126.18 MB
+
+✅ COMPLETUDE:
+   • Description: 0.3% nulos (1454 registros)
+   • CustomerID: 24.9% nulos (135080 registros)
+
+🔍 UNICIDADE:
+   • Duplicatas totais: 5268 (1.0%)
+
+🎯 SCORE DE QUALIDADE: 90.8/100
+✅ QUALIDADE EXCELENTE
